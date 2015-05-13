@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MahdaClient</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="default_location">/ext_card/MAHDA</string>
+    <string name="command_status">1</string>
+    <string name="command_voice_record">2</string>
+    <string name="command_video_record">3</string>
+    <string name="command_call_device">5</string>
+    <string name="command_get_file_list">6</string>
+    <string name="command_flight_mode">7</string>
+    <string name="command_delete_file">10</string>
+    <string name="command_download_file">11</string>
+    <string name="duration">duration</string>
+    
+        <string name="quality">quality</string>
+	<string name="count">count</string>
+	<string name="delay">delay</string>
+	
+</resources>

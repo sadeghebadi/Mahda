@@ -1,0 +1,61 @@
+<resources>
+
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">انتخاب رنگ</string>
+    <string name="press_color_to_apply">رنگ مورد نظر را انتخاب کنید</string>
+
+    <!-- Preferences -->
+    <string name="pref_category">Category</string>
+    <string name="color1_title">رنگ</string>
+    <string name="color1_summary">مشکی</string>
+    <string name="color2_title">Color 2</string>
+    <string name="color2_summary">not persistent color\nalpha slider added via code</string>
+    <string name="color3_title">Color 3</string>
+    <string name="color3_summary">picker with alpha slider</string>
+    <string name="color4_title">Color 4</string>
+    <string name="color4_summary">color set with HEX code in xml</string>
+    <!-- PREFERENCE 1 -->
+    <string name="pref1_category_title">تست 1</string>
+    <string name="pref1_summary">این تستی است تست شماره ۱ انجام شد.</string>
+    <string name="pref1_key">PREF1_KEY</string>
+    <string name="pref1_title">تست چک باکس</string>
+    <string name="pref1_title_select">تست select</string>
+    <string name="pref1_title_multiselect">تست  multi select</string>
+    <string name="pref1_title_edittext">تست edittext</string>
+    <string name="pref1_default">تستستس</string>
+
+    <!-- PREFERENCE 2 -->
+    <string name="pref2_category_title">تت 2</string>
+    <string name="pref2_summary">تست شماره یک</string>
+    <string name="pref2_key">PREF2_KEY</string>
+    <string name="pref2_title">تست ۲</string>
+    <string name="pref2_default">321</string>
+
+    <!-- PREFERENCE 3 -->
+    <string name="pref3_category_title">Setting 3</string>
+    <string name="pref3_summary">Only an integer value is allowed here. Any other value will cause in opening the input dialog again.</string>
+    <string name="pref3_key">PREF3_KEY</string>
+    <string name="pref3_title">Sub setting 3</string>
+    <string name="pref3_default">123</string>
+
+    <!-- BASIC ACTIONS -->
+    <string name="accept">باشه</string>
+    <string name="cancel">بیخیال</string>
+
+    <!-- multiselectlist -->
+    <string-array name="catos">
+        <item>فیلم</item>
+        <item>تست</item>
+        <item>تست ۲</item>
+    </string-array>
+    <string-array name="catovalues">
+        <item>movies-checked</item>
+        <item>test-checked</item>
+        <item>test23-checked</item>
+    </string-array>
+    <string-array name="catodefault">
+        <item>movies-default</item>
+        <item>test-default</item>
+        <item>TEST23-default</item>
+    </string-array>
+</resources>

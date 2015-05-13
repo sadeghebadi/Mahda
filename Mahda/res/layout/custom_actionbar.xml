@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="right"
+    android:gravity="right" >
+ <ImageView
+        android:id="@+id/flight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:background="@android:color/transparent"
+        android:padding="8dp" />
+    <ImageView
+        android:id="@+id/connection_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/tv_app_name_in_action_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginRight="8dp"
+        android:gravity="center_vertical"
+        android:text="@string/app_name_in_action_bar"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/text_size_large"
+        android:typeface="serif" />
+
+    <ImageView
+        android:id="@+id/toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:padding="8dp"
+        android:src="@drawable/ic_drawer" />
+
+</LinearLayout>

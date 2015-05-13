@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/dark_gray"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/ll_text_in_list_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_weight="1"
+        android:gravity="left" >
+
+        <ImageButton
+            android:id="@+id/btn_delete_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_in_list_layout"
+            android:src="@drawable/ic_delete"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_text_in_list_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right" >
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.5"
+            android:paddingBottom="4dp"
+            android:layout_gravity="center"
+            android:paddingTop="4dp"
+            android:text="@string/file_size"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size_xsmall" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_text_in_list_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right" >
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|right"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:text="@string/file_name"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size_small" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_text_in_list_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right" >
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.5"
+            android:gravity="center_vertical|right"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:text="@string/file_date_created"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size_xsmall"
+            android:visibility="visible" />
+    </LinearLayout>
+  <LinearLayout
+        android:id="@+id/ll_text_in_list_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right" >
+    
+    <ImageButton
+        android:id="@+id/btn__refresh"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_in_list_layout"
+        android:src="@drawable/ic_refresh" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--     http://www.color-hex.com/color-palette/3890 -->
+    <color name="deep_purple">#505470</color>
+    <color name="white_color">#FFF</color>
+    <color name="light_purple">#505470</color>
+    <color name="dark_gray">#505470</color>
+    <color name="light_gray">#d3c6fd</color>
+    <color name="pink">#FFF</color>
+    <color name="red">#ff0000</color>
+
+    <color name="panel_button_background_hover">#ec704e</color>
+    <color name="panel_button_background_disable">#CFCFCF</color>
+     <color name="panel_button_text_hover">#000</color>
+        <color name="c_green">#ff99cc00</color>
+    <color name="c_green_dark">#ff6d9b00</color>
+</resources>

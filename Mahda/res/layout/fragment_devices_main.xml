@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/deep_purple"
+    android:gravity="end" >
+
+    <FrameLayout
+        android:id="@+id/fl_action_device_fragments"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white_color" 
+        android:layout_toRightOf="@+id/ll_menus">
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_menus"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_device_info"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/button_normal"
+            android:drawableTop="@drawable/ic_information"
+            android:text="@string/btn_deviceinfo"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size_large"
+            android:typeface="serif"
+            android:layout_weight="1"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="18dp"
+            android:drawablePadding="-15dp"/>
+
+        <Button
+            android:id="@+id/btn_orders"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/button_normal"
+            android:drawableTop="@drawable/ic_command"
+            android:text="@string/btn_orders"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size_large"
+            android:typeface="serif" 
+            android:layout_weight="1"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="18dp"
+            android:drawablePadding="-15dp"/>
+
+        <Button
+            android:id="@+id/btn_file_manager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/button_normal"
+            android:drawableTop="@drawable/ic_file"
+            android:text="@string/btn_filemanager"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size_large"
+            android:typeface="serif" 
+            android:layout_weight="1"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="18dp"
+            android:drawablePadding="-15dp"/>
+
+        <Button
+            android:id="@+id/btn_history"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/button_normal"
+            android:drawableTop="@drawable/ic_history"
+            android:text="@string/btn_history"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size_large"
+            android:typeface="serif"
+            android:layout_weight="1" 
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="18dp"
+            android:drawablePadding="-15dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

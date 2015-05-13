@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Mahda</string>
+    <string name="action_settings">تنظیمات</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="default_location">/sdcard/MAHDA</string>
+    <string name="command_setconnection">0</string>
+    <string name="command_status">1</string>
+    <string name="command_voice_record">2</string>
+    <string name="command_video_record">3</string>
+    <string name="command_capture_photo">4</string>
+    <string name="command_call_device">5</string>
+    <string name="command_get_file_list">6</string>
+    <string name="command_flight_mode">7</string>
+    <string name="command_get_location">8</string>
+    <string name="command_delete_file">10</string>
+    <string name="command_download_file">11</string>
+    <string name="command_get_location_live">12</string>
+    <string name="command_setdirectconnection">13</string>
+    <string name="command_set3gconnection">14</string>
+    <string name="command_order_status">15</string>
+    <string name="command_pingconnection">16</string>
+    <string name="command_restart">17</string>
+    <string name="command_video_motion_record">18</string>
+    <string name="command_capture_motion_photo">19</string>
+
+    <string-array name="orderstatus">
+        <item>ارسال شده</item>
+        <item>دریافت شده</item>
+        <item>دریافت شده</item>
+        <item>درحال انجام</item>
+        <item>تمام شده</item>
+    </string-array>
+    <string-array name="orders">
+        <item>وضعیت</item>
+        <item>ضبط صدا</item>
+        <item>فیلم برداری</item>
+        <item>عکسبرداری</item>
+        <item>تماس</item>
+        <item>نمایش فایل</item>
+        <item>سکوت</item>
+        <item>موقعیت</item>
+        <item>پاک کردن فایل</item>
+        <item>دریافت فایل</item>
+        <item></item>
+        <item></item>
+        <item></item>
+         <item></item>
+          <item></item>
+           <item></item>
+          <item></item>
+        <item>فیلمبرداری هوشمند</item>
+        <item>عکس برداری هوشمند</item>
+    </string-array>
+
+    <string name="yes">بله</string>
+    <string name="no">خیر</string>
+    <string name="btn_deviceinfo">مشخصات</string>
+    <string name="btn_orders">فرمان ها</string>
+    <string name="btn_filemanager">فایل ها</string>
+    <string name="btn_history">تاریخچه</string>
+    <string name="app_name_in_action_bar">مهدا </string>
+    <string name="imei">IMEI</string>
+    <string name="serial_number">شماره سریال</string>
+    <string name="phone_number">شماره تلفن</string>
+    <string name="longitude">طول جغرافیایی</string>
+    <string name="latitude">عرض جغرافیایی</string>
+    <string name="recieve_information">دریافت اطلاعات</string>
+    <string name="recieved_information">دریافت اطلاعات</string>
+    <string name="recieve_error_information">Error</string>
+    <string name="stablish_connection">برقراری ارتباط</string>
+    <string name="stablished_connection">ارتباط برقرار است</string>
+    <string name="stablished_error_connection">خطا</string>
+    <string name="stablish_direct_connection">وضعیت</string>
+    <string name="stablished_direct_connection">روشن</string>
+    <string name="stablished_error_direct_connection">خاموش</string>
+    <string name="stablish_3g_connection">وضعیت</string>
+    <string name="restart">ریستارت</string>
+    <string name="stablished_3g_connection">روشن</string>
+    <string name="stablished_error_3g_connection">خاموش</string>
+    <string name="pinging_connection">Ping</string>
+    <string name="wifi_direct">ارتباط مستقیم</string>
+    <string name="internet">WIFI</string>
+    <string name="_3g">3G</string>
+    <string name="sms">اس ام اس</string>
+    <string name="record_audio">ضبط صدا</string>
+    <string name="record_video">ضبط فیلم</string>
+    <string name="capture_photo">عکس برداری</string>
+    <string name="call_device">تماس با دستگاه</string>
+    <string name="donwload">تخلیه</string>
+    <string name="flighmode">سکوت</string>
+    <string name="kill_device">مرگ</string>
+    <string name="get_location">دریافت موقعیت</string>
+    <string name="motion_pic">عکسبرداری خودکار</string>
+    <string name="motion_vid">فیلمبرداری خودکار</string>
+    <string name="record_duration">مدت ضبط</string>
+    <string name="record_quality">انتخاب کیفیت</string>
+    <string name="minute">دقیقه</string>
+    <string name="quality">کیفیت</string>
+    <string name="secend">ثانیه</string>
+    <string name="darghah_server">انتخاب درگاه ارتباطی</string>
+    <string name="darghah_client">وضعیت درگاه دستگاه</string>
+    <string name="ping_client">وضعیت اینترنت دستگاه</string>
+    <string name="quality_prompt">انتخاب...</string>
+
+    <string-array name="quality_arrays">
+        <item>عالی</item>
+        <item>خوب</item>
+        <item>معمولی</item>
+    </string-array>
+
+    <string name="flight_mode_duration">مدت سکوت</string>
+    <string name="get_duration">مدت دریافت</string>
+    <string name="get_interarrival">فاصله دریافت ها</string>
+    <string name="start_date">تاریخ شروع</string>
+    <string name="start_time">زمان شروع</string>
+    <string name="end_date">تاریخ پایان</string>
+    <string name="end_time">زمان پایان</string>
+    <string name="photo_count">تعداد عکس ها</string>
+    <string name="photo_order_time">مدت زمان اجرا</string>
+    <string name="photo_interarrival">فاصله عکس ها</string>
+    <string name="photo">عکس</string>
+    <string name="har">هر</string>
+    <string name="send_command">ارسال فرمان</string>
+    <string name="get_files_list">دریافت لیست فایل ها</string>
+    <string name="file_name">نام فایل</string>
+    <string name="file_size">حجم فایل</string>
+    <string name="file_date_created">زمان ایجاد فایل</string>
+    <string name="no_connection">ارتباط قطع است</string>
+    <string name="has_connection">ارتباط برقرار است</string>
+    <string name="connecting">در حال برقراری ارتباط</string>
+
+</resources>

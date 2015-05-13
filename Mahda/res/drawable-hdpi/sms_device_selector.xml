@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- <item android:drawable="@drawable/ic_device_bluetooth_dark" android:state_="true"></item> -->
+    <!-- <item android:drawable="@drawable/ic_device_bluetooth" android:state_activated="false"></item> -->
+
+    <item android:drawable="@drawable/ic_device_signal_cellular_dark" android:state_selected="true" android:state_pressed="true"/>
+    <item android:drawable="@drawable/ic_device_signal_cellular_dark" android:state_selected="true" />
+    <item android:drawable="@drawable/ic_device_signal_cellular_dark" android:state_pressed="true"/>
+    <item android:drawable="@drawable/ic_device_signal_cellular"/>
+
+</selector>

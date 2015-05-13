@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    android:background="@color/pink" >
+
+    
+
+    <!-- <HorizontalScrollView -->
+    <!-- android:id="@+id/sv_voice_record" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="match_parent" > -->
+
+    <RelativeLayout
+        android:id="@+id/rl_in_sv_call_device"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp" >
+
+        <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+        <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+        <!-- PHONE NUMBER+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+        <LinearLayout
+            android:id="@+id/ll_phone_number"
+            style="@style/linearlayout_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:visibility="gone"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_phone_number_value"
+                style="@style/layout_bound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.8"
+                android:gravity="center"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/text_size_small" 
+                android:typeface="serif"/>
+
+            <View
+                style="@style/VerticalDivider"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp" 
+                android:typeface="serif"/>
+
+            <TextView
+                android:id="@+id/tv_phone_number_key"
+                style="@style/layout_bound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:text="@string/phone_number"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/text_size_small" 
+                android:typeface="serif"/>
+        </LinearLayout>
+
+        <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+        <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+        <!-- CALL BUTTON+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+        <ImageButton
+            
+            android:id="@+id/btn_call_device"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/ic_communication_call"
+            android:background="@drawable/button_circle_layout"
+            android:typeface="serif"
+            />
+<!--             android:text="@string/send_command" -->
+<!--             android:textColor="@color/white_color" -->
+<!--             android:textSize="@dimen/text_size_large"  -->
+    </RelativeLayout>
+    <!-- </HorizontalScrollView> -->
+
+</RelativeLayout>

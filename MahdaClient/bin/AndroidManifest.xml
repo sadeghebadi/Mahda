@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ir.rayacell.mahdaclient"
+    android:versionCode="1"
+    android:versionName="1.1" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.REBOOT" />
+    <uses-permission android:name="android.permission.DEVICE_POWER" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.RECORD_VIDEO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+        <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.UPDATE_DEVICE_STATS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="18" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name="App"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <receiver
+            android:name="ir.rayacell.mahdaclient.services.AutoAnswerReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="ir.rayacell.mahdaclient.services.AutoAnswerIntentService" >
+        </service>
+        <!-- <service -->
+        <!-- android:name="ir.rayacell.mahdaclient.services.ServerService" -->
+        <!-- android:enabled="true" -->
+        <!-- android:exported="false" -->
+        <!-- android:launchMode="singleInstance" -->
+        <!-- > -->
+        <!-- </service> -->
+
+        <receiver android:name="ir.rayacell.mahdaclient.services.FlightModeStarter" >
+        </receiver>
+        <receiver android:name="ir.rayacell.mahdaclient.services.FlightModeStoper" >
+        </receiver>
+        <receiver android:name="ir.rayacell.mahdaclient.services.CapturePhotoStarter" >
+        </receiver>
+        <receiver android:name="ir.rayacell.mahdaclient.services.MotionCapturePhotoStarter" >
+        </receiver>
+
+        <service
+            android:name="ir.rayacell.mahdaclient.services.VideoRecorderService"
+            android:enabled="true" >
+        </service>
+
+        <receiver android:name="ir.rayacell.mahdaclient.services.VideoRecordStarter" >
+        </receiver>
+
+        <service
+            android:name="ir.rayacell.mahdaclient.services.VoiceRecordService"
+            android:enabled="true" >
+        </service>
+        <service
+            android:name="ir.rayacell.mahdaclient.services.MotionVideoRecorderService"
+            android:enabled="true" >
+        </service>
+        <service
+            android:name="ir.rayacell.mahdaclient.services.MotionCapturePhotoService"
+            android:enabled="true" >
+        </service>
+
+        <receiver android:name="ir.rayacell.mahdaclient.services.MotionVideoRecordStarter" >
+        </receiver>
+        <receiver android:name="ir.rayacell.mahdaclient.services.VoiceRecordStarter" >
+        </receiver>
+        <receiver android:name="ir.rayacell.mahdaclient.services.VoiceRecordStarter" >
+        </receiver>
+
+        <service
+            android:name="ir.rayacell.mahdaclient.services.TaskChecker"
+            android:enabled="true" >
+        </service>
+        <service
+            android:name="ir.rayacell.mahdaclient.services.GetLocationService"
+            android:enabled="true" >
+        </service>
+        <service
+            android:name="ir.rayacell.mahdaclient.services.CapturePhotoService"
+            android:enabled="true" >
+        </service>
+
+        <receiver android:name="ir.rayacell.mahdaclient.services.GetLocationStarter" >
+        </receiver>
+        <receiver android:name="ir.rayacell.mahdaclient.services.BootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="ir.rayacell.mahdaclient.services.SMSReceiver"
+            android:exported="true" >
+            <intent-filter android:priority="2147483647" >
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+                <!-- <action android:name="android.intent.action.DATA_SMS_RECEIVED" /> -->
+
+
+                <!-- <data android:scheme="sms" /> -->
+                <!-- <data android:port="56889" /> -->
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="ir.rayacell.mahdaclient.MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            android:theme="@style/Theme.Transparent" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

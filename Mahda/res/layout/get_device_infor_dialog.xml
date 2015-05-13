@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:layout_margin="10dp"
+    android:background="@color/dark_gray"
+    android:gravity="right" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:gravity="right" >
+
+        <Button
+            android:id="@+id/exit"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/btn_popup_close"
+            android:textColor="#FFFFFF"
+            android:typeface="serif" />
+    </LinearLayout>
+
+    <TableRow
+        android:layout_gravity="right"
+        android:gravity="right" >
+
+        <TextView
+            android:id="@+id/exitecontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="right"
+            android:padding="10dp"
+            android:text="اطلاعات دستگاه"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:typeface="serif" />
+
+        <!-- <Button -->
+        <!-- android:id="@+id/fake" -->
+        <!-- android:layout_width="40dp" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_marginBottom="10dp" -->
+        <!-- android:layout_weight="1" -->
+        <!-- android:text="@string/yes" -->
+        <!-- android:visibility="invisible" /> -->
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="271dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:clickable="false"
+                android:gravity="right"
+                android:hint="نام دستگاه"
+                android:inputType="textPersonName"
+                android:lines="1"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:typeface="serif" />
+        </LinearLayout>
+    </TableRow>
+
+     <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+      <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/ersal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:clickable="false"
+                android:gravity="right"
+                android:hint="شماره"
+                android:numeric="integer"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:typeface="serif" />
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:gravity="left" >
+
+            <Button
+                android:id="@+id/ok_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/button_circle_layout"
+                android:shadowColor="#FFFFFF"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="12"
+                android:text="تایید"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:typeface="serif" />
+              <Button
+                android:id="@+id/delete_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/button_circle_layout"
+                android:shadowColor="#FFFFFF"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="12"
+                android:text="پاک کردن"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:typeface="serif" />
+        </LinearLayout>
+    </TableRow>
+
+</TableLayout>

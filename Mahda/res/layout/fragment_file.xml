@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    android:background="@color/pink" >
+
+
+    <!-- <HorizontalScrollView -->
+    <!-- android:id="@+id/sv_voice_record" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="match_parent" > -->
+
+    <RelativeLayout
+        android:id="@+id/rl_in_sv_download"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp" >
+
+        <!-- <ListView -->
+        <!-- android:id="@+id/lv_files_to_download" -->
+        <!-- android:layout_width="fill_parent" -->
+        <!-- android:layout_height="fill_parent" -->
+        <!-- android:visibility="gone" > -->
+
+
+        <!-- android:drawSelectorOnTop="false" -->
+
+
+        <!-- </ListView> -->
+
+        <RelativeLayout
+            android:id="@+id/rl_file_list_holder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btn_get_files_list"
+            android:layout_alignParentTop="true" >
+
+            <ListView
+                android:id="@+id/lv_filesm_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentTop="true"
+                android:drawSelectorOnTop="false"
+                android:visibility="visible" />
+            <!-- android:background="@drawable/background_gradient" -->
+
+            <ProgressBar
+                android:id="@+id/pb_in_filem_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="invisible"
+                android:layout_gravity="center" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_get_files_list"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_curved_layout"
+            android:paddingLeft="5dp"
+            android:visibility="invisible"
+            android:paddingRight="5dp"
+            android:text="@string/get_files_list"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size_large" />
+    </RelativeLayout>
+
+</RelativeLayout> <!-- </HorizontalScrollView> -->
+

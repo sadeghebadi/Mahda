@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    android:background="@color/pink" >
+
+    <TextView
+        android:id="@+id/tv_kill_device_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/curved_layout"
+        android:gravity="center_horizontal"
+        android:paddingBottom="4dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="4dp"
+        android:text="@string/kill_device"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/text_size_large"
+        android:typeface="serif" />
+
+    <!-- <HorizontalScrollView -->
+    <!-- android:id="@+id/sv_voice_record" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="match_parent" > -->
+
+    <RelativeLayout
+        android:id="@+id/rl_in_sv_kill_device"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/tv_kill_device_title"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp" >
+
+        <!-- <LinearLayout -->
+        <!-- android:id="@+id/rl_video_record_duration" -->
+        <!-- style="@style/linearlayout_style" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_alignParentLeft="true" -->
+        <!-- android:layout_alignParentTop="true" -->
+        <!-- android:layout_marginBottom="10dp" -->
+        <!-- android:background="@drawable/view_curved_layout" -->
+        <!-- android:orientation="vertical" > -->
+
+
+        <!-- <TextView -->
+        <!-- android:id="@+id/tv_video_record_duration" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="match_parent" -->
+        <!-- android:layout_marginLeft="5dp" -->
+        <!-- android:layout_marginRight="5dp" -->
+        <!-- android:gravity="center_horizontal" -->
+        <!-- android:paddingLeft="20dp" -->
+        <!-- android:paddingRight="20dp" -->
+        <!-- android:text="@string/record_duration" -->
+        <!-- android:textColor="@color/white_color" -->
+        <!-- android:textSize="@dimen/text_size_large" /> -->
+
+
+        <!-- <View -->
+        <!-- android:id="@+id/divider_video_record" -->
+        <!-- style="@style/HorizontalDivider" -->
+        <!-- android:layout_marginLeft="5dp" -->
+        <!-- android:layout_marginRight="5dp" /> -->
+        <!-- android:layout_below="@id/tv_voice_record_duration" -->
+
+
+        <!-- <LinearLayout -->
+        <!-- android:id="@+id/ll_invideorecordduration" -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:orientation="horizontal" > -->
+
+
+        <!-- <TextView -->
+        <!-- android:id="@+id/tv_video_record_minute" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_marginLeft="5dp" -->
+        <!-- android:layout_marginRight="5dp" -->
+        <!-- android:alpha="0.5" -->
+        <!-- android:gravity="center_horizontal" -->
+        <!-- android:paddingLeft="5dp" -->
+        <!-- android:paddingRight="5dp" -->
+        <!-- android:text="@string/minute" -->
+        <!-- android:textColor="@color/white_color" -->
+        <!-- android:textSize="@dimen/text_size_medium" /> -->
+
+
+        <!-- <EditText -->
+        <!-- android:id="@+id/et_video_record_duration" -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:inputType="numberDecimal" > -->
+
+
+        <!-- <requestFocus /> -->
+        <!-- </EditText> -->
+        <!-- </LinearLayout> -->
+        <!-- </LinearLayout> -->
+        <!-- android:layout_below="@id/divider_voice_record"/> -->
+
+
+        <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+        <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+        <!-- DATE AND TIME PICKER+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+        <LinearLayout
+            android:id="@+id/ll_date_and_time_kill_device"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal" >
+
+            <!-- android:layout_toRightOf="@id/rl_voice_record_duration" -->
+
+            <LinearLayout
+                android:id="@+id/ll_timepicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/view_curved_layout"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_timepicker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/start_time"
+                    android:textColor="@color/white_color"
+                    android:textSize="@dimen/text_size_large" 
+                    android:typeface="serif"/>
+
+                <TimePicker
+                    android:id="@+id/tp_kill_device"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                                        style="@style/edittext"
+                    
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.5" 
+                    android:typeface="serif"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_datepicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/view_curved_layout"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_datepicker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/start_date"
+                    android:textColor="@color/white_color"
+                    android:textSize="@dimen/text_size_large" 
+                    android:typeface="serif"/>
+
+                <DatePicker
+                    android:id="@+id/dp_kill_device"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="0.5"
+                    android:background="@color/dark_gray"
+                    android:calendarViewShown="false"
+                    android:textAlignment="center"
+                    android:typeface="serif" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+        <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+        <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+        <Button
+            android:id="@+id/btn_send_command"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_hover"
+            android:text="@string/send_command"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size_large" 
+            android:typeface="serif"/>
+    </RelativeLayout>
+    <!-- </HorizontalScrollView> -->
+
+</RelativeLayout>

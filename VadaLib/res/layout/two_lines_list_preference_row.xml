@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dip"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:gravity="right"
+    android:orientation="vertical"
+    android:padding="0dip" >
+    <ImageView
+        android:id="@+id/custom_list_view_row_selected_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@android:drawable/checkbox_on_background" />
+
+    <TextView
+        android:id="@+id/custom_list_view_row_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="22dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+</RelativeLayout>

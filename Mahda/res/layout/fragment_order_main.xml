@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <LinearLayout
+        android:id="@+id/ll_command_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_gray"
+        android:orientation="horizontal" >
+
+        <!-- VOICE RECORD++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+        <Button
+            android:id="@+id/btn_voice_record_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.125"
+            android:background="@drawable/button_normal"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="@string/record_audio"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size_medium"
+            android:visibility="visible" 
+            android:typeface="serif"/>
+
+        <!-- VIDEO RECORD++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+        <Button
+            android:id="@+id/btn_video_record_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.125"
+            android:background="@drawable/button_normal"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="@string/record_video"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size_medium"
+            android:visibility="visible" 
+            android:typeface="serif"/>
+
+        <!-- PHOTO CAPTURE++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+        <Button
+            android:id="@+id/btn_capture_photo_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.125"
+            android:background="@drawable/button_normal"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="@string/capture_photo"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size_medium"
+            android:visibility="visible" 
+            android:typeface="serif"/>
+
+        <!-- CALL DEVICE++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+        <Button
+            android:id="@+id/btn_call_device_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.125"
+            android:background="@drawable/button_normal"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="@string/call_device"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size_medium"
+            android:visibility="visible" 
+            android:typeface="serif"/>
+
+        <!-- DOWNLOAD++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+        <Button
+            android:id="@+id/btn_download_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.125"
+            android:background="@drawable/button_normal"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="@string/donwload"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size_medium"
+            android:visibility="visible" 
+            android:typeface="serif"/>
+
+        <!-- FLIGHT MODE++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+        <Button
+            android:id="@+id/btn_flight_mode_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.125"
+            android:background="@drawable/button_normal"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="@string/flighmode"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size_medium"
+            android:visibility="visible" 
+            android:typeface="serif"/>
+
+<!--         KILL DEVICE++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+<!--         <Button -->
+<!--             android:id="@+id/btn_kill_device_tab" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_marginRight="3dp" -->
+<!--             android:layout_weight="0.125" -->
+<!--             android:background="@color/deep_purple" -->
+<!--             android:paddingLeft="3dp" -->
+<!--             android:paddingRight="3dp" -->
+<!--             android:text="@string/kill_device" -->
+<!--             android:textColor="@color/white_color" -->
+<!--             android:textSize="@dimen/text_size_medium" -->
+<!--             android:visibility="visible" /> -->
+
+        <!-- GET LOCATION++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+        <Button
+            android:id="@+id/btn_get_location_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.125"
+            android:background="@drawable/button_normal"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="@string/get_location"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size_medium"
+            android:visibility="visible"
+            android:typeface="serif" />
+                <Button
+            android:id="@+id/btn_motion_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.125"
+            android:background="@drawable/button_normal"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="@string/motion_pic"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size_medium"
+            android:visibility="visible"
+            android:typeface="serif" />
+                         <Button
+            android:id="@+id/btn_motion_vid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.125"
+            android:background="@drawable/button_normal"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="@string/motion_vid"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size_medium"
+            android:visibility="visible"
+            android:typeface="serif" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_orders_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/ll_command_tabs" >
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_normal"
+    android:minHeight="?android:attr/listPreferredItemHeightSmall"
+    android:paddingRight="4dp" >
+
+    <TextView
+        android:id="@+id/tv_device_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/im_device_image"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="Folder name here."
+        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+        android:textSize="@dimen/text_size_medium" 
+        android:typeface="serif"
+        android:textColor="@color/white_color"/>
+
+    <ImageView
+        android:id="@+id/im_device_image"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:paddingRight="10dp" 
+        android:src="@drawable/mobile"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+          >
+    </LinearLayout>
+
+</RelativeLayout>

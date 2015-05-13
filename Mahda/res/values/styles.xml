@@ -1,0 +1,87 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+        <item name="android:typeface">serif</item>
+    </style>
+
+
+    <style name="MooSpinnerItem" parent="android:Widget.TextView.SpinnerItem">
+        <item name="android:textAppearance">@style/MooTextAppearanceSpinnerItem</item>
+    </style>
+
+    <style name="MooTextAppearanceSpinnerItem" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme"></style>
+    <style name="BlueTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/BlueTheme.ActionBarStyle</item>
+         <item name="android:spinnerItemStyle">@style/MooSpinnerItem</item>
+    </style>
+    <style name="BlueTheme.ActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:titleTextStyle">@style/BlueTheme.ActionBar.TitleTextStyle</item>
+        <item name="android:background">@color/deep_purple</item>
+    </style>
+
+    <style name="BlueTheme.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/white_color</item>
+    </style>
+
+    <style name="VerticalDivider">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+
+    <style name="VerticalDividerInList">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+
+    <style name="HorizontalDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+
+    <style name="layout_bound">
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingTop">5dp</item>
+    </style>
+    <!-- <item name="android:paddingLeft">5dp</item> -->
+    <!-- <item name="android:paddingRight">5dp</item> -->
+
+    <style name="linearlayout_style">
+        <item name="android:background">@drawable/curved_layout</item>
+    </style>
+
+    <style name="edittext">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="cDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/custom_dialog</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- <item name="android:typeface">monospace</item> -->
+        <item name="android:textSize">15sp</item>
+        <item name="android:windowAnimationStyle">@style/animation</item>
+    </style>
+
+    <style name="animation">
+        <item name="android:windowEnterAnimation">@anim/to_down</item>
+        <item name="android:windowExitAnimation">@anim/to_up</item>
+    </style>
+
+</resources>
